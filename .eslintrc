@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard"
+  ],
+  "rules": {
+    "semi": [
+      2,
+      "always"
+    ],
+    "space-before-function-paren": "off"
+  },
+  "env": {
+    "jest": true,
+    "jasmine": true
+  }
+}

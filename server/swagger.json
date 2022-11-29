@@ -1,0 +1,88 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "NodeRunners API",
+    "description": "REST APIs for NodeRunners",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "/api",
+      "description": "REST APIs"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Cards",
+      "description": "API for Cards"
+    }
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1/cards": {
+      "get": {
+        "tags": [
+          "Cards"
+        ],
+        "summary": "Get all available cards",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Card"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Card": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "strength": {
+          "type": "number"
+        },
+        "defense": {
+          "type": "number"
+        },
+        "rarity": {
+          "type": "string"
+        },
+        "series": {
+          "type": "string"
+        },
+        "sub_series": {
+          "type": "string"
+        },
+        "is_foil": {
+          "type": "boolean"
+        },
+        "total_minted": {
+          "type": "number"
+        },
+        "image": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

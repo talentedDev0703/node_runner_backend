@@ -1,0 +1,15 @@
+{
+  "attributes": [
+    { "trait_type": "Strength", "value": 4, "max_value": 42 },
+    { "trait_type": "Defense", "value": 4, "max_value": 42 },
+    { "trait_type": "Rarity", "value": "Common" },
+    { "trait_type": "Series", "value": "People" },
+    { "trait_type": "Sub-series", "value": "Devs" },
+    { "trait_type": "isFoil", "value": "False" }
+  ],
+  "description": "His unforgiving cabana cuts through tracking, fees and slippage. Need to move your stable under the radar? He is your guy.",
+  "image": "https://metadata-vlad.herokuapp.com/images/1.png",
+  "name": "Michael Egorov - Curve",
+  "external_url": "https://docs.opensea.io/docs/3-viewing-your-items-on-opensea/1",
+  "background_color": "000000"
+}
